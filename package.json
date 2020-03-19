@@ -7,7 +7,11 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "start:nl": "ng serve --configuration=nl",
+    "int:extract": "ng xi18n --output-path src/i18n",
+    "serve-http": "http-server ./dist",
+    "build-i18n": "for lang in en nl; do ng build --output-path=dist/$lang --aot --prod --base-href /$lang/ --i18n-file=src/i18n/messages.$lang.xlf --i18n-format=xlf --i18n-locale=$lang; done"
   },
   "private": true,
   "dependencies": {
@@ -16,9 +20,11 @@
     "@angular/compiler": "~8.2.5",
     "@angular/core": "~8.2.5",
     "@angular/forms": "~8.2.5",
+    "@angular/localize": "^9.0.7",
     "@angular/platform-browser": "~8.2.5",
     "@angular/platform-browser-dynamic": "~8.2.5",
     "@angular/router": "~8.2.5",
+    "http-server": "^0.12.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"

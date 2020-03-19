@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="nl" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="2fe22fb5dd6ba903f0cbd24be1ecd1c99e67fee5" datatype="html">
+        <source>Hi TEAM!</source>
+        <target>Hallo team!</target>
+      </trans-unit>
+      <trans-unit id="langId" datatype="html">
+        <target>De huidige taal is Nederlands</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -61,6 +61,14 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "nl": {
+              "aot": true,
+              "outputPath": "dist/ng-i18n-demo/nl/",
+              "i18nFile": "src/i18n/messages.nl.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "nl",
+              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -72,6 +80,9 @@
           "configurations": {
             "production": {
               "browserTarget": "ng-i18n-demo:build:production"
+            },
+            "nl": {
+              "browserTarget": "AngularInt:build:nl"
             }
           }
         },
